@@ -19,8 +19,8 @@
 			
 			// Checking if passwords match
 			if ($password != $re_password){
-				echo "Passwords do not match";
-				exit();
+				header("Location: logout.php?redirect=register&message=Passwords donot match!");
+				die();
 			}
 
 			$password_hash = md5($password);
