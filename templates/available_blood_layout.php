@@ -44,7 +44,7 @@
 				<select name="filter_hospital" required>
 					<option value="all">All</option>
 					<?php 
-						$query_filter = "select hospital_name from hospitals";
+						$query_filter = "select username from hospitals";
 						$result_filter = $conn->query($query_filter);
 
 						$filter_rows = $result_filter->fetch_all();

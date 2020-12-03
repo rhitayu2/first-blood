@@ -43,7 +43,7 @@ CREATE TABLE `available_blood_bank` (
 
 LOCK TABLES `available_blood_bank` WRITE;
 /*!40000 ALTER TABLE `available_blood_bank` DISABLE KEYS */;
-INSERT INTO `available_blood_bank` VALUES ('hospital1','B+',32),('hospital1','A+',24),('hospital1','A-',50),('hospital1','AB+',50),('hospital2','A-',50),('hospital2','AB+',50),('hospital2','B+',48),('admin','B+',78);
+INSERT INTO `available_blood_bank` VALUES ('hospital2','A+',75),('hospital2','A-',100),('hospital2','B+',78),('hospital2','B-',100),('hospital1','A+',75),('hospital1','A-',100),('hospital1','B+',68),('hospital1','B-',100);
 /*!40000 ALTER TABLE `available_blood_bank` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -68,7 +68,7 @@ CREATE TABLE `credentials` (
 
 LOCK TABLES `credentials` WRITE;
 /*!40000 ALTER TABLE `credentials` DISABLE KEYS */;
-INSERT INTO `credentials` VALUES ('hospital1','49f0bad299687c62334182178bfd75d8','hospital'),('hospital2','49f0bad299687c62334182178bfd75d8','hospital'),('hospital3','49f0bad299687c62334182178bfd75d8','hospital'),('rhitayu2','49f0bad299687c62334182178bfd75d8','receiver'),('test','49f0bad299687c62334182178bfd75d8','receiver'),('test2','49f0bad299687c62334182178bfd75d8','receiver');
+INSERT INTO `credentials` VALUES ('hospital1','098f6bcd4621d373cade4e832627b4f6','hospital'),('hospital2','098f6bcd4621d373cade4e832627b4f6','hospital'),('test_receiver1','49f0bad299687c62334182178bfd75d8','receiver'),('test_receiver2','49f0bad299687c62334182178bfd75d8','receiver');
 /*!40000 ALTER TABLE `credentials` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -95,7 +95,7 @@ CREATE TABLE `hospitals` (
 
 LOCK TABLES `hospitals` WRITE;
 /*!40000 ALTER TABLE `hospitals` DISABLE KEYS */;
-INSERT INTO `hospitals` VALUES ('hospital1','hospital1',999999999,'sadfasfasf','sad@sad'),('hospital2','Hospital2',999999999,'aksjfhkasjfhkasj','sad@sad'),('hospital3','Hospital3',99999,'sad@sad','sad@sad');
+INSERT INTO `hospitals` VALUES ('hospital1','Hospital 1',999999999,'Hospital 1, Address1','hospital1@localhost.com'),('hospital2','Hospital 2',999999999,'Hospital 2, Address','hospital2@localhost.com');
 /*!40000 ALTER TABLE `hospitals` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -124,7 +124,7 @@ CREATE TABLE `receivers` (
 
 LOCK TABLES `receivers` WRITE;
 /*!40000 ALTER TABLE `receivers` DISABLE KEYS */;
-INSERT INTO `receivers` VALUES ('rhitayu2','Rhitayu ','m',22,9999999999,'sad@sad','A+'),('test','Rhitayu','m',22,99999999999,'sad@sad','B+'),('test2','Rhitayu ','f',22,9998887776,'sad@sad','A+');
+INSERT INTO `receivers` VALUES ('test_receiver1','Test Receiver 1','m',22,999999999,'receiver1@localhost.com','A+'),('test_receiver2','Test Receiver 2','f',22,9998887776,'receiver2@localhost.com','B+');
 /*!40000 ALTER TABLE `receivers` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -150,7 +150,7 @@ CREATE TABLE `requested_blood_bank` (
 
 LOCK TABLES `requested_blood_bank` WRITE;
 /*!40000 ALTER TABLE `requested_blood_bank` DISABLE KEYS */;
-INSERT INTO `requested_blood_bank` VALUES ('hospital1','test','B+',12,'2020-12-02 08:27:58'),('hospital2','test','B+',2,'2020-12-02 08:28:08'),('hospital1','test2','A+',12,'2020-12-02 08:31:52'),('hospital1','test2','A+',12,'2020-12-02 08:34:03'),('hospital1','rhitayu2','A+',2,'2020-12-02 08:40:44'),('hospital1','test','B+',2,'2020-12-02 09:21:35'),('hospital1','test','B+',3,'2020-12-02 09:21:41'),('hospital1','test','B+',1,'2020-12-02 13:42:46');
+INSERT INTO `requested_blood_bank` VALUES ('hospital2','test_receiver1','A+',25,'2020-12-03 12:47:22'),('hospital1','test_receiver1','A+',25,'2020-12-03 12:47:27'),('hospital2','test_receiver2','B+',22,'2020-12-03 12:47:57'),('hospital1','test_receiver2','B+',32,'2020-12-03 12:48:03');
 /*!40000 ALTER TABLE `requested_blood_bank` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -163,4 +163,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-12-02 19:35:48
+-- Dump completed on 2020-12-03 18:19:32

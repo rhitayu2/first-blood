@@ -19,12 +19,12 @@
 
 		// Inserting into credentials first
 		echo $query_string = "insert into credentials values ('".$username."','".$password."','".$user_type."');";
-		$result = $conn->query($query_string);
-
+		$result1 = $conn->query($query_string);
+		// mysql_close($conn);
 		// Inserting Hospital Information
-		echo $query_string = "insert into hospitals values('".$username."','".$name."',".$phone.",'".$address."','".$email."');";
-		$result = $conn->query($query_string);
-		if($result == 1){
+		echo $query_string2 = "insert into hospitals values('".$username."','".$name."',".$phone.",'".$address."','".$email."');";
+		$result2 = $conn->query($query_string2);
+		if($result2 == 1){
 			header("Location: index.php");
 			die();
 		}

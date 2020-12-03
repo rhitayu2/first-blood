@@ -1,8 +1,8 @@
 <?php
-	$servername = "localhost";
-	$username = "bloodbank";
-	$password = "bloodbank123";
-	$dbname = "BloodBankDB";
+	$servername = "sql12.freemysqlhosting.net";
+	$username = "sql12380133";
+	$password = "iFGxAKyDxb";
+	$dbname = "sql12380133";
 
 	// Create connection
 	$conn = new mysqli($servername, $username, $password, $dbname);

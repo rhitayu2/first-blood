@@ -16,7 +16,7 @@
 				<h3>Sign In</h3>
 				<div class = "form-element" style="padding: 10px">
 					<label style="padding-right: 8px">Username</label>
-					<input type="text" name="username" pattern="[a-zA-Z0-9]+" required />
+					<input type="text" name="username" required />
 				</div>
 				<div class = "form-element" style="padding: 10px">
 					<label style="padding-right: 8px">Password</label>
