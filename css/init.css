@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 5px;
+  background: #f1f1f1;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.leftcolumn {   
+  float: left;
+  width: 25%;
+  padding-right: 20px;
+  border-radius: 12px;
+  background-color: #ffffff;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 75%;
+  background-color: #ffffff;
+  padding-left: 20px;
+  border-radius: 12px;
+}
