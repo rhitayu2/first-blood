@@ -1,4 +1,4 @@
-## Blood Bank
+# Blood Bank
 
 A PHP based Web Application for the Inventory Management of Blood Types.
 
