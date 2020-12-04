@@ -3,9 +3,14 @@
 A PHP based Web Application for the Inventory Management of Blood Types.
 
 ## Table of Contents
-1. [Tech Stack Used](#tech-stack-used)
-2. [Set Up](#set-up)
-3. [Running Instance](#running-instance)
+1. [Running Instance](#running-instance)
+2. [Tech Stack Used](#tech-stack-used)
+3. [Set Up](#set-up)
+4. [Types of Users](#types-of-users)
+
+### Running Instance
+
+There is a running instance of the Web App hosted on : https://basic-blood2.herokuapp.com
 
 ### Tech Stack Used
 * PHP
@@ -23,11 +28,6 @@ A PHP based Web Application for the Inventory Management of Blood Types.
 	* Install Apache Server and start the service using `systemctl start apache2.service`.
 	* Copy the files in  `/var/www/html`.
 	* Can be accessed through `http://localhost`.
-
-
-### Running Instance
-
-There is a running instance of the Web App hosted on : https://basic-blood2.herokuapp.com
 
 ## Types of Users
 
