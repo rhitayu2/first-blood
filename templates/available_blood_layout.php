@@ -85,7 +85,7 @@
 			  	<tr>
 				    <th>Hospital Username</th>
 				    <th>Blood Type</th>
-				    <th>Blood Quantity</th>
+				    <th>Available Blood Quantity (in mL)</th>
 				    <th>Quantity to Request (in mL)</th>
 				    <th>Request</th>
 			  	</tr>

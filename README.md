@@ -29,3 +29,7 @@ A PHP based Web Application for the Inventory Management of Blood Types.
 
 There is a running instance of the Web App hosted on : https://basic-blood2.herokuapp.com
 
+## Types of Users
+
+1. Receivers: The Users who can request the Blood Sample from the available Blood Bank.
+2. Hospitals: The Users who can add the Blood Sample to the Available Blood Bank.
